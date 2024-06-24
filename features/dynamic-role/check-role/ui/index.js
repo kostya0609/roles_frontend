@@ -1,0 +1,1 @@
+export { default as CheckRole } from './CheckRole.vue';

@@ -1,0 +1,54 @@
+{
+  "todotree": {
+    "tree": [
+      {
+        "key": 1709684911851,
+        "children": [],
+        "todo": {
+          "content": "Автоматически добавлять маршруты из плагина",
+          "id": 1709684911851,
+          "level": "success",
+          "done": false,
+          "start": 1709684911851
+        }
+      },
+      {
+        "key": 1709684806366,
+        "children": [],
+        "todo": {
+          "content": "Возможность задавать префикс для маршрутов плагина",
+          "id": 1709684806366,
+          "level": "success",
+          "done": false,
+          "start": 1709684806366
+        }
+      },
+      {
+        "key": 1709684865653,
+        "children": [],
+        "todo": {
+          "content": "Возможность управлять главным меню из плагина (пока только добавлять кнопку назад)",
+          "id": 1709684865653,
+          "level": "default",
+          "done": false,
+          "start": 1709684865653
+        }
+      }
+    ],
+    "expandKeys": [],
+    "schema": "https://github.com/Saber2pr/vsc-ext-todolist/blob/master/src/api/type.ts#L3",
+    "add_mode": "bottom",
+    "virtual": false,
+    "timelines": [
+      1709684806366
+    ],
+    "showLine": false,
+    "playFontSize": 24,
+    "title": "требования",
+    "autoSort": false,
+    "showEndTime": false,
+    "simpleMode": false,
+    "lang": "ru",
+    "version": "1709685995602"
+  }
+}

@@ -1,0 +1,1 @@
+export { useStaticRole } from './useStaticRole';

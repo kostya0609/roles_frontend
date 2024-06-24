@@ -1,0 +1,1 @@
+export { default as DeleteRoleButton } from './DeleteRoleButton.vue';

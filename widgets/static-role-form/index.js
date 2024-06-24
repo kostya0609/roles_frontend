@@ -1,0 +1,1 @@
+export { StaticRoleForm } from './ui';

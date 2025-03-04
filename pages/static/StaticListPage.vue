@@ -2,12 +2,12 @@
 	<div>
 		<el-row :gutter="15">
 			<el-col :md=12>
-				<Pagination
+				<!-- <Pagination
 					class="mb-2"
 					:total="total"
 					@update="getAll"
 					ref="paginationUpRef"
-				/>
+				/> -->
 			</el-col>
 			<el-col :md=12>
 				<SearchRole
@@ -53,11 +53,11 @@
 			/>
 		</el-table>
 
-		<Pagination
+		<!-- <Pagination
 			:total="total"
 			@update="getAll"
 			ref="paginationDownRef"
-		/>
+		/> -->
 
 	</div>
 </template>
@@ -65,35 +65,35 @@
 <script setup>
 import { ref, reactive, watch } from 'vue';
 import { useStaticRoleRepo } from '@/plugins/roles/entities/static-role/api';
-import { Pagination } from '@/plugins/roles/shared/ui'
+// import { Pagination } from '@/plugins/roles/shared/ui'
 import { SearchRole } from '@/plugins/roles/entities/static-role/ui'
 
 const StaticRoleRepo = useStaticRoleRepo();
 const selectRole = ref(null);
 const roles = ref([]);
-const total = ref(0);
-const sort = reactive({ name: 'id', order: 'asc' })
+// const total = ref(0);
+// const sort = reactive({ name: 'id', order: 'asc' })
 
-const paginationUpRef = ref();
-const paginationDownRef = ref();
+// const paginationUpRef = ref();
+// const paginationDownRef = ref();
 
-const getAll = async (currentPage = 1, pageSize = 10) => {
-	let result = await StaticRoleRepo.getAll({
-		page: currentPage,
-		count: pageSize,
-		sort,
+const getTree = async () => {
+	let result = await StaticRoleRepo.getTree({
+		// page: currentPage,
+		// count: pageSize,
+		// sort,
 	});
 	roles.value = result.items;
-	total.value = result.total;
+	// total.value = result.total;
 };
 
-const resetPaginations = () => {
-	paginationUpRef.value.reset();
-	paginationDownRef.value.reset();
-	total.value = 1;
-}
+// const resetPaginations = () => {
+// 	paginationUpRef.value.reset();
+// 	paginationDownRef.value.reset();
+// 	total.value = 1;
+// }
 
-await getAll();
+await geеTree();
 
 const getById = async () => {
 	let result = await StaticRoleRepo.getById({

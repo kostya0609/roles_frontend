@@ -13,10 +13,10 @@ export class StaticRoleRepository extends BaseRepository {
 	* }} payload
 	* @return {Promise<any>}
 	*/
-	async getAll(payload) {
+	async getTree(payload) {
 		const result = await this._query({
             payload,
-            nestedEndpoint : 'statics/list'
+            nestedEndpoint : 'statics/tree'
         });
         if (!result.success)
             throw new Error(result.message);

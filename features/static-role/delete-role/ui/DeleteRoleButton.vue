@@ -34,7 +34,7 @@ const handleClick = async () => {
         emit('setLoading', true);
         await StaticRoleRepo.delete({ id: route.params.id });
 
-        router.push('/admin/roles/statics');
+        router.push('/sed/admin/roles/statics');
     } catch (e) {
         if (e !== 'cancel') {
             notify.fetchError(e.message);

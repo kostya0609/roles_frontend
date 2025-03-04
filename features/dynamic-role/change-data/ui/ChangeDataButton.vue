@@ -21,6 +21,6 @@ defineProps({
 });
 
 const handleClick = () => {
-    router.push('/admin/roles/dynamics/edit/' + route.params.id);
+    router.push('/sed/admin/roles/dynamics/edit/' + route.params.id);
 };
 </script>

@@ -2,8 +2,8 @@
     <el-switch
         :active-text="activeText"
         :inactive-text="inactiveText"
-        :active-value=1
-        :inactive-value=0
+        :active-value=true
+        :inactive-value=false
     />
 </template>
 <script setup>
